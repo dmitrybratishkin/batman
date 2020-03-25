@@ -3,6 +3,7 @@ body {
     color: white;
     font-family: 'Roboto', sans-serif;
     background-image: url('../img/main-bg.jpg');
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: top center;
 }
@@ -236,7 +237,11 @@ body {
 }
 
 .tabs-content {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
     margin-right: 70px;
+    margin-top: 40px;
 }
 
 .tabs-item {
@@ -249,4 +254,9 @@ body {
 
 .tabs-item-active {
     color: #FF8F27;
+}
+
+.banner {
+    display: flex;
+    margin-top: 166px;
 }
