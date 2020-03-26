@@ -193,12 +193,16 @@ body {
     background: #FFFFFF;
     border-radius: 3px;
     color: #000000;
-    padding: 43px 50px;
+    padding: 3% 4%;
+}
+
+.short-info {
+    margin-right: 3%;
 }
 
 .poster {
     display: block;
-    margin-top: -80px;
+    margin-top: -40%;
     margin-bottom: 20px;
 }
 
@@ -225,6 +229,7 @@ body {
     list-style: none;
     padding-left: 15px;
     text-decoration: underline;
+    line-height: 150%;
 }
 
 .full-info {
@@ -237,26 +242,175 @@ body {
 }
 
 .tabs-content {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 140%;
     margin-right: 70px;
-    margin-top: 40px;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4%;
 }
 
 .tabs-item {
     color: #000000;
     text-decoration: none;
-    margin-right: 40px;
     font-style: 18px;
     line-height: 21px;
+}
+
+.tabs-item:not(:last-child) {
+    margin-right: 4%;
 }
 
 .tabs-item-active {
     color: #FF8F27;
 }
 
-.banner {
+.text {
+    font-size: 16px;
+    line-height: 140%;
+    margin-top: 0;
+}
+
+.subscribe-title {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 14px;
+    margin-top: 0;
+}
+
+.subscribe-form {
     display: flex;
-    margin-top: 166px;
+    margin-bottom: 48px;
+}
+
+.subscribe-input {
+    background: rgba(196, 196, 196, 0.5);
+    /* скругление */
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    /* внутренний отступ сверху */
+    padding-top: 12px;
+    /* внутренний отступ снизу */
+    padding-bottom: 12px;
+    /* отступы по краям */
+    padding-left: 18px;
+    padding-right: 18px;
+    /* убираем рамку */
+    border: none;
+    color: #AEAEAE;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.subscribe-button {
+    background: #FF8F27;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    padding: 12px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 950px;
+    }
+
+    .tabs-item {
+        font-style: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 740px;
+    }
+
+    .tabs {
+        flex-wrap: wrap;
+    }
+
+    .tabs-item {
+        flex-basis: 20%;
+        line-height: 2;
+    }
+
+    .full-content {
+        flex-wrap: wrap;
+    }
+
+    .tabs-content {
+        margin-bottom: 4%;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .actors-list {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 560px;
+    }
+
+    .more {
+        display: none;
+    }
+
+    .tabs-item {
+        flex-basis: 33%;
+    }
+
+    .tabs-content {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 578px) {
+    .container {
+        width: 90%;
+    }
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .search {
+        flex-basis: 100%;
+        order: 3;
+        margin-top: 5%;
+    }
+
+    .content {
+        flex-wrap: wrap;
+    }
+
+    .short-info {
+        margin-bottom: 5%;
+        margin-right: 0;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .actors-list,
+    .actors-title {
+        display: none;
+    }
+
+    .play {
+        flex-basis: 100%;
+        margin-top: 10%;
+    }
+
+    .poster {
+        margin-top: -20%;
+        display: inline-block;
+        width: 100%;
+    }
 }
